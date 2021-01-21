@@ -1,0 +1,26 @@
+.btn {
+    margin-top: 54px;
+    width: 210px;
+    height: 50px;
+    border: solid 1px $main-black;
+    border-radius: 12px;
+    background: 0 0;
+    font-size: 17px;
+    letter-spacing: .51px;
+
+    background-image: linear-gradient(45deg, #93d0d1 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background .7s ease-in-out;
+        &:focus {
+            outline: 0;
+        }
+        &:hover {
+        background-position: 0;
+        }
+    &_white {
+        color: #ffffff;
+        border: solid 1px #fff;
+    }
+} 

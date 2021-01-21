@@ -1,0 +1,205 @@
+.footer {
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    &__copywright {
+        background: url('../img/copywright.png') no-repeat 50%/cover;
+        padding: 74px 67px 72px 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-title {
+            line-height: 1.47;
+            letter-spacing: 1.35px;
+        }
+        &-logo {
+            margin-top: 257px;
+        }
+        &-author {
+            margin-top: 34px;
+        }
+        &-position {
+            margin-top: 19px;
+            font-size: 17px;
+            line-height: 3.88;
+            letter-spacing: 0.51px;
+        }
+    }
+    &__contacts {
+        background: url('../img/contacts.png') no-repeat 50%/cover;
+        padding: 74px 0 72px 54px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-form {
+            margin-top: 50px;
+            display: grid;
+            grid-template: 55px 160px 55px / repeat(2, 302px);
+            column-gap: 13px;
+            row-gap: 15px;
+        }
+        &-input, &-textarea {
+            width: 100%;
+            height: 55px;
+            padding: 20px 27px;
+            border-radius: 13px;
+            border: solid 1px #ffffff;
+            background: transparent;
+            outline: none;
+            font-size: 17px;
+            line-height: 1.88;
+            letter-spacing: 0.51px;
+            color: #ffffff;
+            &::-webkit-input-placeholder {
+                color:#fff;
+                font-size: 17px;
+                line-height: 1.88;
+                letter-spacing: 0.51px;
+                text-indent: 0px;   
+                transition: text-indent 0.9s ease;
+            }
+            &::-moz-placeholder {
+                color:#fff;
+                font-size: 17px;
+                line-height: 1.88;
+                letter-spacing: 0.51px;
+                text-indent: 0px;   
+                transition: text-indent 0.9s ease;
+            }
+            &:-moz-placeholder {
+                color:#fff;
+                font-size: 17px;
+                line-height: 1.88;
+                letter-spacing: 0.51px;
+                text-indent: 0px;   
+                transition: text-indent 0.9s ease;
+            }
+            &:-ms-input-placeholder {
+                color:#fff;
+                font-size: 17px;
+                line-height: 1.88;
+                letter-spacing: 0.51px;
+                text-indent: 0px;   
+                transition: text-indent 0.9s ease;
+            }
+            &:focus::-webkit-input-placeholder {
+                text-indent: 100%; 
+                transition: text-indent 0.9s ease;
+            }
+            &:focus::-moz-placeholder {
+                text-indent: 100%; 
+                transition: text-indent 0.9s ease;
+            }
+            &:focus:-moz-placeholder {
+                text-indent: 100%; 
+                transition: text-indent 0.9s ease;
+            }
+            &:focus:-ms-input-placeholder {
+                text-indent: 100%; 
+                transition: text-indent 0.9s ease;
+            }
+        }
+        &-textarea {
+            grid-row: 2;
+            grid-column: 1/3;
+            height: 160px;
+            padding: 23px 27px;
+            border-radius: 13px;
+            border: solid 1px #ffffff;
+            &::-webkit-input-placeholder {
+                text-indent: 0px;   
+                opacity: 1; 
+                transition: opacity 0.9s ease;
+            }
+            &::-moz-placeholder {
+                text-indent: 0px;   
+                opacity: 1; 
+                transition: opacity 0.9s ease;
+            }
+            &:-moz-placeholder {
+                text-indent: 0px;
+                opacity: 1; 
+                transition: opacity 0.9s ease;
+            }
+            &:-ms-input-placeholder {
+                text-indent: 0px;   
+                opacity: 1; 
+                transition: opacity 0.9s ease;
+            }
+            &:focus::-webkit-input-placeholder {
+                text-indent: 0px; 
+                opacity: 0; 
+                transition: opacity 0.9s ease;
+            }
+            &:focus::-moz-placeholder {
+                text-indent: 0px; 
+                opacity: 0; 
+                transition: opacity 0.9s ease;
+            }
+            &:focus:-moz-placeholder {
+                text-indent: 0px; 
+                opacity: 0; 
+                transition: opacity 0.9s ease;
+            }
+            &:focus:-ms-input-placeholder {
+                text-indent: 0px; 
+                opacity: 0; 
+                transition: opacity 0.9s ease;
+            }
+        }
+        &-btn {
+            margin: 0;
+            opacity: 1;
+            visibility: visible;
+            transition: .7s all;
+        }
+        .hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        &-text {
+            margin-top: 50px;
+            font-size: 17px;
+            line-height: 1.88;
+            letter-spacing: 0.51px;
+        }
+        &-social {
+            margin-top: 22px;
+            margin-bottom: 45px;
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-icon {
+            width: 45px;
+            height: 45px;
+            padding: 10px 16px 11px;
+            border-radius: 7.1px;
+            border: none;
+            background-color: #345bb4;
+            transition: all 0.7s;
+            background-image: linear-gradient(45deg, #5672b3 50%, transparent 50%);
+            background-position: 100%;
+            background-size: 400%;
+            -webkit-transition: background 300ms ease-in-out;
+            transition: background .7s ease-in-out;
+                &:focus {
+                    outline: 0;
+                }
+                &:hover {
+                background-position: 0;
+                }
+        }
+        .dribble {
+            padding: 10px;
+            background-color: #e64895;
+            background-image: linear-gradient(45deg, #df6ca3 50%, transparent 50%);
+        }
+        .twitter {
+            padding: 13px 11px;
+            background-color: #00b4ff;
+            background-image: linear-gradient(45deg, #66cffc 50%, transparent 50%);
+
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.title {
+    font-size: 45px;
+    &_fz40 {
+        font-size: 40px;
+    }
+    &_light {
+        font-weight: 300;
+    }
+    &_bold {
+        font-weight: 900;
+    }
+    &_regular {
+        font-weight: normal;
+    }
+    &_white {
+        color: #fff
+    }
+}
+
+.white {
+    color: rgba(255, 255, 255, 0.88);
+}

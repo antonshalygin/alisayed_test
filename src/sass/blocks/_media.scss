@@ -1,0 +1,233 @@
+@media(max-width: 1366px) {
+    .menu {
+        &__link {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+    }
+    .project {
+        &__info {
+            padding: 140px 60px 0 50px;
+        }
+    }
+    .title {
+        font-size: 36px;
+        &_fz40 {
+            font-size: 36px;
+        }
+    }
+    .footer {
+        &__copywright, &__contacts {
+            padding: 40px;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .project {
+        grid-template: 100% / 1fr 1fr;
+        min-height: unset;
+        &__img {
+            min-height: unset;
+        }
+        &__info {
+            min-height: unset;
+            padding: 40px;
+            height: 640px;
+        }
+    }
+    .menu {
+        &.active {
+            left: 50%;
+        }
+        &__block {
+            width: 50%;
+        }
+    }
+    .services {
+        grid-template-columns: 1fr 1fr;
+        &__list, &__starting, &__dummy {
+            padding: 40px;
+        }
+        &__list {
+            justify-content: space-between;
+        }
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        &__contacts {
+            padding: 40px;
+            &-form {
+                grid-template-columns: repeat(2,1fr);
+            }
+            &-btn {
+                width: 100%;
+            }
+            &-input, &-textarea {
+                padding: 15px;
+                font-size: 14px;
+                &::-webkit-input-placeholder{
+                    font-size: 14px;
+                }
+                &::-moz-placeholder {
+                    font-size: 14px;
+                }
+                &:-moz-placeholder{
+                    font-size: 14px;
+                }
+                &:-ms-input-placeholder {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .project {
+        &__title {
+            margin-top: 40px;
+            &-descr p {
+                margin-top: 10px;
+            }
+        }
+    }
+    .services {
+        &__dummy, &__list, &__starting {
+            padding: 20px;
+        }
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+    .footer {
+        &__contacts {
+            &-form {
+                grid-template-rows: repeat(2, 55px) 160px 55px;
+                grid-template-columns: 1fr;
+            }
+            &-textarea {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .project {
+        display: block;
+        background: url('../img/project.png') no-repeat 20%/cover;
+        .hamburger {
+            position: absolute;
+            right: 40px;
+            span {
+                background: #fff; 
+            }
+        }
+        &__img {
+            display: none;
+        }
+        &__info {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px 40px 40px 40%;
+            height: unset;
+        }
+        &__title {
+            color: rgba(255,255,255,.88);
+            margin-top: 70px;
+            &-descr {
+                color: rgba(255,255,255,.88);
+            }
+        }
+    }
+    .menu {
+        &.active {
+            left: 40%;
+        }
+        &__block {
+            width: 60%;
+            padding-top: 120px;
+            padding-left: 10px;
+        }
+        &__link {
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+    }
+    .services {
+        height: unset;
+        min-height: 100%;
+        grid-template-rows: 650px repeat(2, auto);
+        grid-template-columns: 1fr;
+        &__list {
+            // display: block;
+            min-height: unset;
+            grid-row: 1;
+            &-item {
+                margin-bottom: 20px;
+            }
+        }
+        &__starting {
+            min-height: unset;
+        }
+        &__dummy {
+            min-height: unset; 
+        }
+        .btn {
+            margin-top: 20px;
+        }
+    }
+    .footer {
+        grid-template: 700px 450px / 100%;
+        height: unset;
+        &__copywright {
+            padding: 20px;
+            height: 450px;
+            grid-row: 2;
+            &-logo {
+                margin-top: 20px;
+            }
+            &-author {
+                margin-top: 20px;
+            }
+        }
+        &__contacts {
+            padding: 20px;
+            height: 700px;
+            &-form {
+                margin-top: 20px;;
+            }
+            &-text {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .project {
+        &__info {
+            padding: 20px;
+            padding-left: 50px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 100%;
+        }
+        &.active {
+            left: 0;
+        }
+    }
+    .services {
+        grid-template-rows: repeat(3, auto);
+        &__list {
+            padding: 15px;
+        }
+        &__title {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    }
+}

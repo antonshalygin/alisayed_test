@@ -1,0 +1,43 @@
+.project {
+    display: grid;
+    grid-template: 100vh / 2fr 1fr;
+    min-height: 800px;
+    &__img {
+        background: url('../img/project.png') no-repeat 20%/cover;
+        min-height: 800px;
+    }
+    &__info {
+        background-color: #f3f3f3;
+        padding: 160px 77px 0 54px;
+        min-height: 800px;
+    }
+    &__title {
+        margin-top: 74px;
+        line-height: 1.43;
+        letter-spacing: 1.22px;
+        color: $main-black;
+        &-descr {
+            padding-top: 20px;
+            font-size: 18.5px;
+            letter-spacing: 0.56px;
+            p {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+.hamburger {
+    height: 30px;
+    width: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 33px;
+        height: 3px;
+        background: $main-black;
+    }
+}
